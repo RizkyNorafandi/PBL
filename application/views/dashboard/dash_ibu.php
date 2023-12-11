@@ -311,6 +311,7 @@
                                             <th>No.Telepon</th>
                                         </tr>
                                     </tfoot>
+                                    <!-- proses memmanggil data dari tabel -->
                                     <?php foreach ($data_ibu->result_array() as $key): ?>
                                     <tbody>
                                         <tr>
