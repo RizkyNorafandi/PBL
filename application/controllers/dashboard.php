@@ -17,6 +17,8 @@ class dashboard extends CI_Controller {
     public function index()
     {
         $this->load->view('template/dash_header.php');
+        $this->load->view('template/dash_sidebar.php');
+        $this->load->view('template/dash_topbar.php');
         $this->load->view('dashboard/dashboard');
         $this->load->view('template/dash_footer.php');
     }
