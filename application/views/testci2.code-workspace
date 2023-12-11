@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../../../testci2"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "testci",
+    "liveServer.settings.port": 5501
+  }
+}
