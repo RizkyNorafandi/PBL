@@ -26,6 +26,7 @@
                                             <th>Agama</th>
                                             <th>Alamat</th>
                                             <th>No.Telepon</th>
+                                            <th>Opsi</th>
                                         </tr>
                                     </thead>
                                     
@@ -34,17 +35,18 @@
                                     <tbody>
                                         <?php 
                                         $id = 1;
-                                        foreach ($data_ibu as $key) : ?>
+                                        foreach ($tb_ibu as $key) : ?>
                                         <tr>
                                             <td><?= $id++?></td>
                                             <td><?= $key['nama_ibu']?></td>
-                                            <td><?= $key['nik']?></td>
+                                            <td><?= $key['nik_ibu']?></td>
                                             <td><?= $key['gol_darah']?></td>
                                             <td><?= $key['tempat_lahir']?>, <?= $key['tanggal_lahir']?></td>
                                             <td><?= $key['pekerjaan']?></td>
                                             <td><?= $key['agama']?></td>
                                             <td><?= $key['alamat']?></td>
                                             <td><?= $key['no_tlp']?></td>
+                                            <td></td>
                                         </tr>
                                         <?php endforeach; ?>
                                     </tbody>

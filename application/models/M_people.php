@@ -5,7 +5,7 @@ class M_people extends CI_Model {
 
     public function getUserIbu()
     {
-        $result = $this->db->get('data_ibu')->result_array();
+        $result = $this->db->get('tb_ibu')->result_array();
         return $result;
     }
 

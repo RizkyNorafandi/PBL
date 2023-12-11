@@ -14,8 +14,9 @@ class People extends CI_Controller {
 
     public function index()
     {
-        $data['data_ibu'] = $this->M_people->getUserIbu();
-        $this->load->view('template/dash_header.php');
+        $title['title'] =  'Data Ibu';
+        $data['tb_ibu'] = $this->M_people->getUserIbu();
+        $this->load->view('template/dash_header.php',$title);
         $this->load->view('template/dash_sidebar.php');
         $this->load->view('template/dash_topbar.php');
         $this->load->view('dashboard/dash_ibu', $data);
