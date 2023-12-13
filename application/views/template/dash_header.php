@@ -22,4 +22,9 @@
     <!-- Page tables -->
     <link href=<?php echo base_url("assets_2/vendor/datatables/dataTables.bootstrap4.min.css")?> rel="stylesheet">
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="<?= base_url('assets_3/tamplate')?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets_3/tamplate')?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets_3/tamplate')?>/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
 </head>

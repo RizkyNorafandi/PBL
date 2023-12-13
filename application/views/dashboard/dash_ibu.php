@@ -10,7 +10,7 @@
 
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-success">DataTables Example</h6>
+                            <h6 class="m-0 font-weight-bold text-success">Data Ibu</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -29,6 +29,20 @@
                                             <th>Opsi</th>
                                         </tr>
                                     </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama</th>
+                                            <th>NIK</th>
+                                            <th>Gol.Darah</th>
+                                            <th>Tempat tanggal lahir</th>
+                                            <th>Pekerjaan</th>
+                                            <th>Agama</th>
+                                            <th>Alamat</th>
+                                            <th>No.Telepon</th>
+                                            <th>Opsi</th>
+                                        </tr>
+                                    </tfoot>
                                     
                                     <!-- proses memmanggil data dari tabel -->
 
@@ -46,7 +60,10 @@
                                             <td><?= $key['agama']?></td>
                                             <td><?= $key['alamat']?></td>
                                             <td><?= $key['no_tlp']?></td>
-                                            <td></td>
+                                            <td>
+                                                <a href="<?= base_url('') ?>" class="btn btn-warning btn-sm">edit</a> 
+                                                <a href="<?= base_url('') ?>" class="btn btn-danger btn-sm">delete</a>
+                                            </td>
                                         </tr>
                                         <?php endforeach; ?>
                                     </tbody>

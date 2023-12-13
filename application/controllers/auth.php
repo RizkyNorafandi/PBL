@@ -65,25 +65,24 @@ class auth extends CI_Controller {
             }
         }
 
-        $cekAnak = $this->sess->cekUser('data_anak','nik',$nik);
+        $cekKader = $this->sess->cekUser('tb_kader','nik_kader',$nik);
 
-        if($cekAnak == 0){
+        if($cekKader == 0){
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
                     NIK atau Password salah</div>');
                     redirect('auth/login');
         }else{
-            foreach($cekAnak as $anak) {
-                if (password_verify($password,$anak->password)){
-                    $dataAnak = array(
-                        'nik' => $anak->nik,
-                        'nama' => $anak->nama_anak,
+            foreach($cekKader as $kader) {
+                if (password_verify($password,$kader->password)){
+                    $dataKader = array(
+                        'nik' => $kader->nik,
+                        'nama' => $kader->nama_kader,
                         'role' => 'anak'
+
                     );
                     
-                    $this->session->set_userdata( $dataAnak );
-                    redirect('auth');
-
-                    
+                    $this->session->set_userdata( $dataKader );
+                    redirect('auth');  
                 }
             }
         }

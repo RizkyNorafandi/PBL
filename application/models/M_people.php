@@ -9,10 +9,15 @@ class M_people extends CI_Model {
         return $result;
     }
 
+    public function getUserKader()
+    {
+        $result = $this->db->get('tb_kader')->result_array();
+        return $result;
+    }
+
     public function detailIbu($id)
     {
         $this->db->where('id', $id);
-        
     }
 
 }
